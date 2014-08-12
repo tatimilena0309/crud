@@ -27,10 +27,10 @@
             <tbody>
                 <c:forEach items="${users}" var="user">
                     <tr>
-                        <td><c:out value="${user.id}" /></td>
-                        <td><c:out value="${user.name}" /></td>
-                        <td><c:out value="${user.email}" /></td>
-                        <td><c:out value="${user.phones}"/></td>
+                        <td>${user.id}</td>
+                        <td>${user.name}</td>
+                        <td>${user.email}</td>
+                        <td>${user.phones}</td>
                         <td><a href="GetUpdateUserServlet?id=<c:out value="${user.id}"/>">Update</a></td>
                         <td>
                             <form method="POST" action="DeleteUserServlet">
