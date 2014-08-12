@@ -1,4 +1,7 @@
 *.class
 build/
+dist/
+nbproject/
+src/conf/
 *~
 build.xml
