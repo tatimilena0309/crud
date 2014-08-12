@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>CRUD</title>
+        <title>CRUD Básico</title>
     </head>
     <body>
         <jsp:forward page="ListUsersServlet" />
