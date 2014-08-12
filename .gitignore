@@ -1,7 +1,7 @@
-*.class
 build/
-dist/
 nbproject/
+dist/
 src/conf/
-*~
 build.xml
+*.class
+*~
