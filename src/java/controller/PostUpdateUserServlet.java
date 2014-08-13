@@ -40,11 +40,11 @@ public class PostUpdateUserServlet extends HttpServlet {
         String _name = request.getParameter("name");
         String _email = request.getParameter("email");
         String _password = request.getParameter("password");
-        
+
         String[] _phones = request.getParameterValues("phone");
         List<String> phones = new ArrayList<>();
         phones.addAll(Arrays.asList(_phones));
-        
+
         Map<String, String> errors = new HashMap<>();
         request.setAttribute("errors", errors);
 

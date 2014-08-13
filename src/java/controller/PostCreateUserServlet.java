@@ -42,10 +42,10 @@ public class PostCreateUserServlet extends HttpServlet {
         String[] _phones = request.getParameterValues("phone");
         List<String> phones = new ArrayList<>();
         phones.addAll(Arrays.asList(_phones));
-        
+
         User user = new User();
         Map<String, String> errors = new HashMap<>();
-        
+
         user.setName(_name);
         user.setEmail(_email);
         user.setPassword(_password);

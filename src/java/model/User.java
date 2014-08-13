@@ -18,11 +18,11 @@ public class User {
     private String email;
     private String password;
     List<String> phones;
-    
-    public User(){
+
+    public User() {
         phones = new ArrayList<>();
     }
-    
+
     public int getId() {
         return id;
     }

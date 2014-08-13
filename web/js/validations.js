@@ -69,12 +69,12 @@ jQuery.fn.extend({
 
 jQuery.fn.extend({
     validatePhone: function() {
-        $('div.phone').each(function(){
+        $('div.phone').each(function() {
             var $phoneInput = $(this).children('input.phone');
             var $phoneSpan = $(this).children('span.phone');
             var phone = $phoneInput.val();
-            
-            if(!$.isNumeric(phone) || phone.length !== 11){
+
+            if (!$.isNumeric(phone) || phone.length !== 11) {
                 $phoneSpan.html("Phone must be a number with 11 digits");
                 $phoneSpan.removeClass("success").addClass("error");
                 $phoneInput.removeClass("success").addClass("error");
@@ -85,8 +85,8 @@ jQuery.fn.extend({
                 $phoneInput.removeClass("error").addClass("success");
             }
         });
-        
-        $('div.phone').each(function(){
+
+        $('div.phone').each(function() {
             $(this).children('span').hasClass('error');
             return false;
         });
@@ -99,7 +99,7 @@ $(document).ready(function() {
         var validEmail = $(this).validateEmail();
         var validPassword = $(this).validatePassword();
         var validPhone = $(this).validatePhone();
-        
+
         return (validName && validEmail && validPassword && validPhone);
     });
 });
