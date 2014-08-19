@@ -5,3 +5,4 @@ src/conf/
 build.xml
 *.class
 *~
+web/index.xhtml
